@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.root{
+    @apply w-screen h-screen bg-neutral-900
+}
+
+.nav{
+    @apply bg-neutral-950 p-4 flex
+}
+
+.nav-name{
+    @apply text-green-50 text-5xl px-6 basis-[50%]
+}
+
+.nav-wrapper{
+    @apply basis-[40%] flex space-x-4 pr-4
+}
+
+.nav-btn{
+    @apply bg-neutral-950 text-green-50 px-3 py-2 rounded-md border border-green-700 shadow-md shadow-green-700 hover:bg-green-700 hover:shadow-none;
+    @apply font-semibold flex flex-row items-center justify-between;
+}
+
+.nav-btn .nav-btn-icon{
+    @apply w-auto ps-1
+}
+
+.theme-toggle{
+    @apply basis-[10%] ps-3
+}
+
