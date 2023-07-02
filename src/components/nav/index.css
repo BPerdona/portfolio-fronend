@@ -3,28 +3,35 @@
 @tailwind utilities;
 
 #root{
-    @apply w-screen h-screen bg-neutral-800;
-    @apply dark:bg-neutral-300;
+    @apply w-screen h-screen  bg-neutral-200;
+    @apply dark:bg-neutral-800;
 }
 
 .nav{
-    @apply bg-neutral-900 p-4 flex sticky top-0 z-50 drop-shadow-xl;
-    @apply dark:bg-neutral-100 dark:drop-shadow-md;
+    @apply  p-4 flex bg-neutral-100 drop-shadow-md;
+    @apply dark:bg-neutral-900;
 }
 
 .nav-name{
-    @apply text-green-50 text-4xl px-6 basis-[50%] font-semibold;
-    @apply dark:text-neutral-700;
+    @apply text-neutral-700 text-3xl font-semibold basis-[90%]; 
+    @apply dark:text-green-50;
+    @apply lg:basis-[55%] lg:px-6 lg:text-4xl;
 }
 
 .nav-wrapper{
     @apply basis-[40%] flex space-x-4 pr-4;
+    @apply hidden lg:flex;
 }
 
 .nav-btn{
-    @apply bg-neutral-950 text-green-50 px-3 py-2 rounded-md border border-green-700 shadow-md shadow-green-700 hover:bg-green-700 hover:shadow-none;
+    @apply bg-neutral-700 shadow-none text-white px-3 py-2 rounded-md hover:shadow-green-700 hover:shadow-md transition duration-300;
     @apply font-semibold flex flex-row items-center justify-between;
-    @apply dark:bg-neutral-700 dark:shadow-none dark:hover:shadow-green-700 dark:hover:shadow-md;
+    @apply dark:bg-neutral-950 dark:shadow-sm  dark:shadow-green-700 dark:hover:bg-green-700 dark:hover:shadow-none;
+    
+}
+
+.mobile-nav-button {
+    @apply lg:hidden basis-[10%] flex items-center justify-end text-green-600;
 }
 
 .nav-btn .nav-btn-icon{
@@ -32,5 +39,11 @@
 }
 
 .theme-toggle{
-    @apply basis-[10%] ps-3;
+    @apply basis-[5%] ps-3 items-center justify-end;
+    @apply hidden lg:flex;
+}
+
+.mobile-menu-button{
+    @apply block py-2 px-4 text-neutral-700 bg-neutral-200 hover:bg-neutral-100 transition duration-300;
+    @apply dark:text-white dark:bg-neutral-800 dark:hover:bg-neutral-700
 }

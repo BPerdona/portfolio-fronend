@@ -3,8 +3,12 @@ import { IconContext } from "react-icons"
 import {BsFillMoonStarsFill} from "react-icons/bs"
 import {BsSunFill} from "react-icons/bs"
 
+interface NavThemeToggleProps{
+    classNames?: string
+}
 
-export default function NavThemeToggle(){
+
+export default function NavThemeToggle(props:NavThemeToggleProps){
     const [theme, setTheme] = useState(localStorage.theme);
     const colorTheme = theme === "dark" ? "light" : "dark";
 
@@ -16,7 +20,7 @@ export default function NavThemeToggle(){
     },[theme, setTheme]);
 
     return (
-        <button className="theme-toggle" onClick={handleButtonClick}>
+        <button className={props.classNames} onClick={handleButtonClick}>
             <IconContext.Provider value={{className: "text-green-400", size:"30"}}>
                 {theme=="light" ? <BsSunFill/> : <BsFillMoonStarsFill/>}
             </IconContext.Provider>
