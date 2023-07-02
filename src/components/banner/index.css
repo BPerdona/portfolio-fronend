@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.banner-wrapper{
+    @apply w-screen bg-green-600 text-white p-14;
+}
+
+.banner-title{
+    @apply text-6xl text-center font-semibold;
+}
+
+.banner-text{
+    @apply p-10 px-32 text-center text-lg font-medium;
+}

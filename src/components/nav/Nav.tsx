@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import NavButton from "./NavButton";
-import ThemeSwitch from "./ThemeToggle";
+import NavThemeToggle  from "./NavThemeToggle";
 import { HiOutlineDownload } from "react-icons/hi"
+import './index.css'
 
 export default function Nav(){
     const defaultName = "Bruno Perdoná"
@@ -43,10 +44,13 @@ export default function Nav(){
                 <NavButton name={"Início"}/>
                 <NavButton name={"Projetos"}/>
                 <NavButton name={"Contato"}/>
-                <NavButton name={"Curriculo"} icon={<HiOutlineDownload/>}/>
+                <NavButton 
+                    name={"Curriculo"} 
+                    icon={<HiOutlineDownload/>}
+                    anchor="../../../curriculum.txt"/>
                 <NavButton name={"Playground"}/>
             </div>
-            <ThemeSwitch/>
+            <NavThemeToggle/>
         </nav>
     )
 }
