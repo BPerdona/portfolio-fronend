@@ -53,7 +53,7 @@ export default function Nav(){
                         anchor="../../../curriculum.txt"/>
                     <NavButton name={"Playground"}/>
                 </div>
-                <NavThemeToggle classNames="theme-toggle"/>
+                <NavThemeToggle classNames="theme-toggle me-5"/>
                 <MobileNavButton/>
             </div>
             <MobileMenu/>

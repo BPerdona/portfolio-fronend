@@ -6,10 +6,13 @@ export default function MobileNavButton(){
         document.querySelector(".mobile-menu")?.classList.toggle("hidden")
     }
     return(
-        <button className="mobile-nav-button" onClick={hideShowMenu}>
-            <IconContext.Provider value={{ size:"35"}}>
-                <TbMenu2/>
-            </IconContext.Provider>
-        </button>
+        <div className="lg:hidden flex flex-auto pe-5 items-center justify-end">
+            <button className="mobile-nav-button" onClick={hideShowMenu}>
+                <IconContext.Provider value={{ size:"35"}}>
+                    <TbMenu2/>
+                </IconContext.Provider>
+            </button>
+        </div>
+        
     )
 }

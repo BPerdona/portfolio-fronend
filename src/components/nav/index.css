@@ -2,18 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-#root{
-    @apply w-screen h-screen  bg-neutral-200;
-    @apply dark:bg-neutral-800;
-}
-
 .nav{
     @apply  p-4 flex bg-neutral-100 drop-shadow-md;
     @apply dark:bg-neutral-900;
 }
 
 .nav-name{
-    @apply text-neutral-700 text-3xl font-semibold basis-[90%]; 
+    @apply text-neutral-800 text-3xl font-semibold basis-[90%]; 
     @apply dark:text-green-50;
     @apply lg:basis-[55%] lg:px-6 lg:text-4xl;
 }
@@ -31,7 +26,7 @@
 }
 
 .mobile-nav-button {
-    @apply lg:hidden basis-[10%] flex items-center justify-end text-green-600;
+    @apply text-green-600;
 }
 
 .nav-btn .nav-btn-icon{
@@ -39,7 +34,7 @@
 }
 
 .theme-toggle{
-    @apply basis-[5%] ps-3 items-center justify-end;
+    @apply ps-3 items-center justify-end;
     @apply hidden lg:flex;
 }
 

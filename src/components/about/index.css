@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.about{
+    @apply lg:flex bg-neutral-200;
+    @apply dark:bg-neutral-900;
+}
+
+.divider{
+    @apply hidden lg:flex border-[6px]  border-green-600
+}
+
+.about-section{
+    @apply text-neutral-800 basis-1/2 pr-5;
+    @apply dark:text-neutral-100
+}
+
+.about-title{
+    @apply w-auto text-center text-3xl font-semibold py-6
+}
+
+.about-subtitle{
+    @apply w-auto text-left text-2xl font-medium ps-12 pb-5
+}
+
+.about-topics{
+    @apply list-disc ps-16
+}
+
+.about-topics li{
+    @apply text-lg pt-2
+}
+
+.about-chip-grid{
+    @apply ps-16 flex flex-wrap pb-5
+}
+
+.about-end{
+    @apply w-full bg-gradient-to-b h-40 from-neutral-200 to-neutral-50 flex justify-center;
+    @apply dark:from-neutral-900 dark:to-neutral-800
+}
+
+.about-ball{
+    @apply hidden lg:flex lg:bg-green-600 lg:h-14 lg:w-14 lg:rounded-full lg:-m-1;
+    
+}
+
+.chip{ 
+    @apply flex space-x-2 px-3 py-2 bg-neutral-700 w-min font-semibold text-lg rounded-2xl text-white m-1 duration-300;
+    @apply dark:bg-neutral-950 dark:shadow-sm dark:shadow-green-600;
+}
