@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn{
+    @apply bg-neutral-700 shadow-none text-white px-3 py-2 rounded-md hover:shadow-green-700 hover:shadow-md transition duration-300;
+    @apply font-semibold flex flex-row items-center justify-between;
+    @apply dark:bg-neutral-950 dark:shadow-sm  dark:shadow-green-700 dark:hover:bg-green-700 dark:hover:shadow-none;
+    
+}
+
+.btn-icon{
+    @apply w-auto ps-1;
+}

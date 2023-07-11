@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav{
+    @apply  p-4 flex bg-neutral-100 drop-shadow-md;
+    @apply dark:bg-neutral-900;
+}
+
+.nav-name{
+    @apply text-neutral-800 text-3xl font-semibold basis-[90%]; 
+    @apply dark:text-green-50;
+    @apply lg:basis-[55%] lg:px-6 lg:text-4xl;
+}
+
+.nav-wrapper{
+    @apply basis-[40%] flex space-x-4 pr-4;
+    @apply hidden lg:flex;
+}
+
+.mobile-nav-button-wraper{
+    @apply lg:hidden flex flex-auto pe-5 items-center justify-end;
+}
+
+.mobile-nav-button {
+    @apply text-green-600;
+}
+
+.theme-toggle{
+    @apply ps-3 items-center justify-end me-5;
+    @apply hidden lg:flex;
+}
+
+.mobile-menu-button{
+    @apply block py-2 px-4 text-neutral-700 bg-neutral-200 hover:bg-neutral-100 transition duration-300;
+    @apply dark:text-white dark:bg-neutral-800 dark:hover:bg-neutral-700
+}
+
+.banner-wrapper{
+    @apply w-screen text-white p-14 duration-300;
+    @apply bg-gradient-to-b from-green-500 via-green-600 to-green-600;
+    @apply dark:bg-gradient-to-r dark:from-neutral-800 dark:from-0% dark:via-green-600 dark:via-50%  dark:to-neutral-800 dark:to-100% ;
+    @apply dark:hover:from-green-950 dark:hover:via-green-600 dark:hover:to-green-950;
+}
+
+.banner-title{
+    @apply text-6xl text-center font-semibold;
+}
+
+.banner-text{
+    @apply p-10 px-32 text-center text-lg font-medium;
+}
+
+.about{
+    @apply lg:flex bg-neutral-200;
+    @apply dark:bg-neutral-900;
+}
+
+.divider{
+    @apply hidden lg:flex border-[6px]  border-green-600
+}
+
+.about-section{
+    @apply text-neutral-800 basis-1/2 pr-5;
+    @apply dark:text-neutral-100
+}
+
+.about-title{
+    @apply w-auto text-center text-3xl font-semibold py-6
+}
+
+.about-subtitle{
+    @apply w-auto text-left text-2xl font-medium ps-12 pb-5
+}
+
+.about-topics{
+    @apply list-disc ps-16
+}
+
+.about-topics li{
+    @apply text-lg pt-2
+}
+
+.about-chip-layout{
+    @apply ps-16 flex flex-wrap pb-5
+}
+
+.about-end{
+    @apply w-full bg-gradient-to-b h-40 from-neutral-200 to-neutral-50 flex justify-center;
+    @apply dark:from-neutral-900 dark:to-neutral-800
+}
+
+.about-ball{
+    @apply hidden lg:flex lg:bg-green-600 lg:h-14 lg:w-14 lg:rounded-full lg:-m-1;
+    
+}

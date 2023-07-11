@@ -1,5 +1,6 @@
 import { ReactElement } from "react"
 import { IconContext } from "react-icons"
+import './index.css'
 
 interface ButtonProps{
     name: string
@@ -8,12 +9,12 @@ interface ButtonProps{
     anchor?: string
 }
 
-export default function NavButton(props: ButtonProps){
+export default function Button(props: ButtonProps){
     return(
         <a href={props.anchor} download>        
-            <button className="nav-btn" onClick={props.onClick}>
+            <button className="btn" onClick={props.onClick}>
                 {props.name}
-                <IconContext.Provider value={{color: "white", size:"1.4em", className:"nav-btn-icon"}}>
+                <IconContext.Provider value={{color: "white", size:"1.4em", className:"btn-icon"}}>
                     {props.icon}
                 </IconContext.Provider>
             </button>

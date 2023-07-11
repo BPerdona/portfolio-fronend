@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.chip{ 
+    @apply flex space-x-2 px-3 py-2 bg-neutral-700 w-min font-semibold text-lg rounded-2xl text-white m-1 duration-300;
+    @apply dark:bg-neutral-950 dark:shadow-sm dark:shadow-green-600;
+}

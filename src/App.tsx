@@ -1,13 +1,9 @@
-import About from "./components/about/About"
-import Banner from "./components/banner/Banner"
-import Nav from "./components/nav/Nav"
+import LandingPage from "./pages/landing_page/LandingPage"
 
 function App() {
   return (
     <div>
-      <Nav/>
-      <Banner/>
-      <About/>
+      <LandingPage/>
     </div>
   )
 }
